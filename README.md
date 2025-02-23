@@ -21,6 +21,7 @@ Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/LeonardKachi/aws-security-monitoring.git
+```
 cd aws-security-monitoring
 pip install -r requirements.txt
 
@@ -38,13 +39,13 @@ You’ll need to provide:
 ▶ Usage
 
 Run the script to start an AWS security audit:
-
+```
 python aws_security_monitor.py
-
+```
 The script will check security groups, IAM users, S3 buckets, and Security Hub findings. A security report will be saved as aws_security_report.json.
 
 📊 Example Output (JSON Report)
-
+```
 {
     "SecurityGroups": [
         "⚠ Security Group 'sg-12345' allows inbound SSH access from ANYWHERE."
@@ -59,7 +60,7 @@ The script will check security groups, IAM users, S3 buckets, and Security Hub f
         "🛑 Security Hub Finding: Root account has active access keys - This is a critical security risk."
     ]
 }
-
+```
 📌 Future Improvements
 	•	✅ AWS Lambda support for real-time security monitoring
 	•	✅ Email/SMS notifications for critical vulnerabilities
@@ -73,4 +74,4 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 This project is licensed under the MIT License.
 
----
+
